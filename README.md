@@ -1,2 +1,3 @@
-# scholar-docker
-Scholar Dockerfile
+# Scholar Dockerfile
+
+More instructions to follow

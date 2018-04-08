@@ -12,9 +12,9 @@ ENV LC_ALL en_US.UTF-8
 RUN apt-get install -y git
 
 # Clone dawn-v3.0.0
-RUN git clone -b master --depth 1 https://github.com/EOSIO/eos.git --recursive && \
+RUN git clone https://github.com/EOSIO/eos.git --recursive && \
     cd eos && \
     git checkout tags/dawn-v3.0.0
 
 # Install EOS.IO Software
-RUN ./eosio_build.sh
+RUN cd eos && ./eosio_build.sh
